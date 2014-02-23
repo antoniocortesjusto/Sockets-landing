@@ -1,0 +1,74 @@
+/* Color table */
+/* Blue:   #160A47 */
+/* Purple: #60047A */
+/* Pink: #9C0F5F */
+/* Red: #C91B26 */
+/* Orange: #F2671F */
+
+
+body{
+	font-family: 'Codystar', cursive;
+	font-weight: 400;
+	color: #160A47;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Codystar', cursive;
+}
+
+h1{
+	font-weight: 300;
+}
+
+h2{
+	font-weight: 100;
+}
+
+.logo{
+	height: 80px;
+	vertical-align: middle;
+	margin-bottom: 20px;
+	margin-left: -30px
+}
+
+.division{
+	height: 50px;
+}
+
+.logo-text{
+	vertical-align: middle;
+	font-size: 48px;
+	margin-top: 10px;
+	color: #160A47;
+}
+
+.btn-sockets{
+	background-color: #C91B26;
+	color: #fff;
+	float: right;
+}
+
+.btn-sockets:hover{
+	
+	color: #160A47;
+	
+}
+
+.codystar{
+	font-family: 'Codystar', cursive;
+
+}
+
+.vt323{
+	font-family: 'VT323', cursive;
+}
+
+.press{
+	font-family: 'Press Start 2P', cursive;
+}
+
+.orbi{
+	font-family: 'Orbitron', sans-serif;
+}
+
+
