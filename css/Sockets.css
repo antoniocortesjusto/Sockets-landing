@@ -10,7 +10,6 @@
 body{
 	font-family: 'Michroma', sans-serif;
 	font-weight: 400;
-	color: rgb(33, 85, 170);
 }
 
 h1, h2, h3, h4, h5, h6{
@@ -20,12 +19,14 @@ h1, h2, h3, h4, h5, h6{
 .white-frame{
 	min-height: 800px;
 	background-color: #FEFEFA;
+	color: rgb(33, 85, 170);
+
 }
 
 .white-frame#main-frame{
 	overflow: hidden;
 	position: relative;
-	z-index: -99;
+	z-index: 1;
 }
 
 .logo-div{
@@ -46,19 +47,22 @@ h1, h2, h3, h4, h5, h6{
 	left: 0;
 	top: 297px;
 	width: 100%;
-	margin-top: 50px;
+	margin-top: 150px;
 
 }
 
-.second-frame{
+#second-frame{
 	position: relative;
+	z-index: 3;
 }
 
 #third-frame{
+	position: relative;
 	background-color:  #FEFEFA;
 	margin-top: -10px;
 	min-height: 300px;
 	text-align: center;
+	z-index: 2;
 }
 
 .video-container{
@@ -93,6 +97,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .subscribe-frame{
+	position: relative;
+	z-index: 2;
 	min-height: 300px;
 	background-color: #C91B26;
 	color: #FEFEFA;
@@ -100,6 +106,8 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #foot-frame{
+	position: relative;
+	z-index: 2;
 	min-height: 150px;
 	text-align: center;
 }
@@ -144,7 +152,7 @@ h1, h2, h3, h4, h5, h6{
 	vertical-align: middle;
 	font-size: 48px;
 	margin-top: 10px;
-	color: #160A47;
+	color: rgb(33, 85, 170);
 }
 
 .btn-sockets{
