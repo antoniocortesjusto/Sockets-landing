@@ -1,6 +1,6 @@
 /* Color table */
 /* White:  #FEFEFA;
-/* Blue:   #160A47 */
+/* Blue:   rgb(33, 85, 170) */
 /* Purple: #60047A */
 /* Pink:   #9C0F5F */
 /* Red:    #C91B26 */
@@ -162,7 +162,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .btn-sockets:hover{
-	color: #160A47;
+	color: rgb(33, 85, 170);
 }
 
 
