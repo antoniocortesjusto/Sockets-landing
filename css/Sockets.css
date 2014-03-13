@@ -99,16 +99,20 @@ h1, h2, h3, h4, h5, h6{
 .subscribe-frame{
 	position: relative;
 	z-index: 2;
-	min-height: 300px;
+	min-height: 205px;
 	background-color: #C91B26;
 	color: #FEFEFA;
 	text-align: center;
 }
 
+.subscribe-h2{
+	margin-bottom: 20px;
+}
+
 #foot-frame{
 	position: relative;
 	z-index: 2;
-	min-height: 150px;
+	min-height: 120px;
 	text-align: center;
 }
 
@@ -123,7 +127,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 #subscribe-form{
-	padding-top: 50px;
+	padding-top: 20px;
 }
 
 .btn-subscribe{
