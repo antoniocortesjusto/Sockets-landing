@@ -21,6 +21,7 @@
     <script src="lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script>  
     <!--script src="js/slide.js" type="text/javascript"></script-->
     <link href='http://fonts.googleapis.com/css?family=Michroma|Orbitron:400,700' rel='stylesheet' type='text/css'>
+    <script src="js/verifyMail.js" type="text/javascript"></script>
   </head>
 
   <body>
@@ -174,12 +175,16 @@
               <label for="MERGE0" class="sr-only">Subscribe</label>
               <input type="email" class="form-control" name="MERGE0" id="MERGE0" placeholder="Email">
             </div>
-            <button type="submit" class="btn btn-subscribe">Subscribe!</button>
+            <button type="button" class="btn btn-subscribe" onclick="checkMail()">Subscribe!</button>
+            <button type="submit" id="suscribe" class="btn btn-subscribe">Subscribe!</button>
           </form>
           <div class="col-lg-4"></div>
         </div>
       </div>
     </section>
+    <div id="wrong_mail" class="wrong-mail">
+      <h2>Your mail should be like example@mail.com, please type a valid mail</h2>
+    </div>
     <footer class="container-fluid white-frame" id="foot-frame">
       <div class="row" id="follow-text">
         <h4> Follow us on :</h4>

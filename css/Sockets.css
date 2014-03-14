@@ -109,6 +109,14 @@ h1, h2, h3, h4, h5, h6{
 	margin-bottom: 20px;
 }
 
+.wrong-mail{
+	position: relative;
+	z-index: 2;
+	text-align: center;
+	background-color: #FEFEFA;
+	color: #C91B26;
+}
+
 #foot-frame{
 	position: relative;
 	z-index: 2;
@@ -138,6 +146,10 @@ h1, h2, h3, h4, h5, h6{
 
 .btn-subscribe:hover{
 	color: #F2671F;
+}
+
+button#suscribe{
+	display:none;
 }
 
 .logo{
