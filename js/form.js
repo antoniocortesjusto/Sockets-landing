@@ -15,12 +15,13 @@ $(document).ready(function(){
 // Bind enter key press with our button
 // Any key press to hide the warning
 $(document).ready(function(){ 
-    $("#subscribe-form").bind("keypress", function(e) {
+    $("#subscribe-form").bind("keydown", function(e) {
         if (e.keyCode == 13) {
             $("button#false-subscribe").trigger("click");
             return false;
-        } else {
+        } else if (e.keyCode != 13){
             // Hide the warning
+            console.log(e.keyCode);
             $("div#wrong_mail").hide(2000);
         }
     });
@@ -64,4 +65,3 @@ function checkMail(){
     // }, 3000);
   }
 }
-
