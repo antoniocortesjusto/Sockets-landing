@@ -32,21 +32,24 @@ function checkMail(){
   var mail = $("input.form-control").val();
 
   // Find the chars needed to be well-written address
-  var attr = mail.indexOf("@");
-  var attr2 = mail.indexOf("@",attr+1);
-  var dot = mail.indexOf(".",attr+2);
-  var dot2 = dot;
-  // Find the last dot  
-  while(dot2 != -1) {
-    dot2 = mail.indexOf(".",dot+1);
-    if(dot2 != -1 ){
-      dot = dot2;
-    }
-  }
-  var subMail = mail.substring(dot+1).length;
+  // var attr = mail.indexOf("@");
+  // var attr2 = mail.indexOf("@",attr+1);
+  // var dot = mail.indexOf(".",attr+2);
+  // var dot2 = dot;
+  // // Find the last dot  
+  // while(dot2 != -1) {
+  //   dot2 = mail.indexOf(".",dot+1);
+  //   if(dot2 != -1 ){
+  //     dot = dot2;
+  //   }
+  // }
+  // var subMail = mail.substring(dot+1).length;
+  // attr > 0 && attr2 == -1 && dot != -1 && subMail > 0
+
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   
   // If the address is correct submit 
-  if (attr > 0 && attr2 == -1 && dot != -1 && subMail > 0){
+  if (re.test(mail)){
     // It seems the page is stuck, button stayed pressed
     $("input.form-control").trigger("focus");
     // Submit
