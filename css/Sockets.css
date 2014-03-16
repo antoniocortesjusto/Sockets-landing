@@ -16,7 +16,7 @@ h1, h2, h3, h4, h5, h6{
 	font-family: 'Michroma', sans-serif;
 }
 
-h5, p, input{
+h5, p{
 	font-family: 'Open Sans', sans-serif;
 }
 
@@ -189,11 +189,6 @@ button#subscribe{
 .orbi{
 	font-family: 'Orbitron', sans-serif;
 	font-weight: 400;
-}
-
-.orbi700{
-	font-family: 'Orbitron', sans-serif;
-	font-weight: 700;
 }
 
 .michroma{

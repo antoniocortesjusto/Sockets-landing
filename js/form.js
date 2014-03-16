@@ -19,9 +19,8 @@ $(document).ready(function(){
         if (e.keyCode == 13) {
             $("button#false-subscribe").trigger("click");
             return false;
-        } else if (e.keyCode != 13){
+        } else {
             // Hide the warning
-            console.log(e.keyCode);
             $("div#wrong_mail").hide(2000);
         }
     });
@@ -46,6 +45,7 @@ function checkMail(){
   // var subMail = mail.substring(dot+1).length;
   // attr > 0 && attr2 == -1 && dot != -1 && subMail > 0
 
+  // regular expressions
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   
   // If the address is correct submit 
@@ -53,18 +53,9 @@ function checkMail(){
     // It seems the page is stuck, button stayed pressed
     $("input.form-control").trigger("focus");
     // Submit
-    $("button#subscribe").trigger("click");
+    $("form#subscribe-form").submit();
   } else {
     $("div#wrong_mail").show();
-    
-    // Set input value to empty string
-    //$("input.form-control").val("");
-    
     $("input.form-control").trigger("focus");
-    
-    // Make the warning to auto remove after 3 seconds
-    // setTimeout(function() {
-    //   $("div#wrong_mail").hide(1000);
-    // }, 3000);
   }
 }
