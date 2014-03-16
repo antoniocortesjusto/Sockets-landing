@@ -21,7 +21,7 @@ $(document).ready(function(){
             return false;
         } else {
             // Hide the warning
-            $("div#wrong_mail").hide(2000);
+            $("div#wrong_mail").slideUp(2000);
         }
     });
 }); 

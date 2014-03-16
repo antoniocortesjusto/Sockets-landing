@@ -70,8 +70,8 @@ h5, p{
 }
 
 .video-container{
-	margin-top: 50px;
-	margin-bottom: 50px;
+	margin-top: 40px;
+	margin-bottom: 30px;
 }
 
 .blue-frame{
@@ -103,7 +103,7 @@ h5, p{
 .subscribe-frame{
 	position: relative;
 	z-index: 2;
-	min-height: 205px;
+	min-height: 200px;
 	background-color: #C91B26;
 	color: #FEFEFA;
 	text-align: center;
@@ -117,14 +117,15 @@ h5, p{
 	position: relative;
 	z-index: 2;
 	text-align: center;
-	background-color: #FEFEFA;
-	color: #C91B26;
+	color: #FEFEFA;
 }
 
 #foot-frame{
 	position: relative;
+	margin-top: -10px;
+	background-color: #FEFEFA;
 	z-index: 2;
-	min-height: 120px;
+	margin-bottom: 10px;
 	text-align: center;
 }
 
@@ -133,8 +134,8 @@ h5, p{
 }
 .social-icon{
 	height: 35px;
-	margin-right: 35px;
-	margin-top: 14px;
+	margin-right: 60px;
+	margin-top: 10px;
 
 }
 
