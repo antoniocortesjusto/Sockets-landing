@@ -33,3 +33,5 @@ function checkMail(){
     $("input.form-control").trigger("focus");
   }
 }
+
+console.log($(window).height());
