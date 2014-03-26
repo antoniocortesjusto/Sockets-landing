@@ -13,7 +13,7 @@ $(document).ready(function(){
             $("div#wrong_mail").slideUp(2000);
         }
     });
-}); 
+});
 
 
 function checkMail(){
@@ -34,4 +34,4 @@ function checkMail(){
   }
 }
 
-console.log($(window).height());
+//alert($(window).height());

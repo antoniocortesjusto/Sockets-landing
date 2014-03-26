@@ -21,7 +21,7 @@ h5, p{
 }
 
 .white-frame{
-	min-height: 800px;
+	min-height: 732px;
 	background-color: #FEFEFA;
 	color: rgb(33, 85, 170);
 
@@ -58,6 +58,7 @@ h5, p{
 #second-frame{
 	position: relative;
 	z-index: 3;
+	height: 732px;
 }
 
 #third-frame{
@@ -75,7 +76,7 @@ h5, p{
 }
 
 .blue-frame{
-	min-height: 800px;
+	min-height: 732px;
 	background-image: linear-gradient(to right, rgb(33, 85, 170) 0%, rgb(62, 114, 198) 100%);
 	z-index: 99;
 	color: #FEFEFA;
