@@ -1,12 +1,19 @@
 function resizeFrame(){
   //Strating point, get all vertical and font sizes and resize them as the screen change its height
   var myHeight= 732;
-  var minHeight = 400;
+  var minHeight = 600;
   var windowHeight = $(window).height();
+
+  console.log(windowHeight);
+
   if (windowHeight < minHeight){
     windowHeight = minHeight;
   }
   var resizeFactor = windowHeight/myHeight;
+
+  console.log(windowHeight);
+  console.log(resizeFactor);
+
 
   function toPixels(value){
     return (value * resizeFactor).toString() + "px";
@@ -24,6 +31,8 @@ function resizeFrame(){
   // $("#third-frame").height(498*resizeFactor);
   // $("#third-frame").css('margin-top', toPixels(-10));
   // $("#third-frame").css('min-height', toPixels(300));
+
+  $(".white-frame").css(toCssStyle(['min-height', 732]));
 
   $("#third-frame").css(toCssStyle(['height', 498, 'margin-top', -10, 'min-height', 300]));
 
@@ -69,6 +78,7 @@ function resizeFrame(){
 
   $(".button-div").css(toCssStyle(['top', 297, 'margin-top', 150]));
 
+  $("#second-frame").css(toCssStyle(['min-height', 732]));
   $("#second-frame").css({'height': toPixels(windowHeight)});
 
   $(".blue-frame").css(toCssStyle(['min-height', 732]));
