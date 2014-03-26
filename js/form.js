@@ -34,4 +34,3 @@ function checkMail(){
   }
 }
 
-//alert($(window).height());

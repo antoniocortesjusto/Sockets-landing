@@ -46,13 +46,13 @@ h5, p{
 	top: 110px;
 	width: 100%;
 }
+
 .button-div{
 	position: fixed;
 	left: 0;
 	top: 297px;
 	width: 100%;
 	margin-top: 150px;
-
 }
 
 #second-frame{
@@ -92,7 +92,6 @@ h5, p{
 
 .feature-icon-container{
 	text-align: center;
-
 }
 
 

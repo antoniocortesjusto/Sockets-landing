@@ -61,10 +61,45 @@ function resizeFrame(){
 
   $(".social-icon").css(toCssStyle(["height", 35, "margin-top" , 10]));
 
-  //$("#second-frame").css(toCssStyle([,'height:' + );
+  //$(".white-frame").css(toCssStyle(['min-height', 732]));
 
-  //$("").css(toCssStyle([,);
+  $(".logo-div").css(toCssStyle(['top', 10]));
+
+  $(".description-div").css(toCssStyle(['top', 110]));
+
+  $(".button-div").css(toCssStyle(['top', 297, 'margin-top', 150]));
+
+  $("#second-frame").css({'height': toPixels(windowHeight)});
+
+  $(".blue-frame").css(toCssStyle(['min-height', 732]));
+
+  $("#feature-title-row").css(toCssStyle(['padding-bottom', 50]));
+
+  $(".feature-row").css(toCssStyle(['padding-bottom', 50]));
+
+  $(".feature-icon").css(toCssStyle(['font-size', 80, 'margin-top', 23]));
+
+  $(".logo").css(toCssStyle(['height', 80, 'margin-bottom', 20]));
+
+  $(".division").css(toCssStyle(['height', 50]));
+
+  $(".logo-text").css(toCssStyle(['font-size', 48, 'margin-top', 10]));
+
+  $("h2").css(toCssStyle(['font-size', 30]));
+
+  $("h4").css(toCssStyle(['font-size', 18]));
+
+  $("h5").css(toCssStyle(['font-size', 14]));
+
+  $(".btn-sockets").css(toCssStyle(['padding-top', 10, 'padding-right', 16, 'padding-bottom', 10,
+                                    'padding-left', 16, 'font-size', 18]));
+
+  $("#main-frame").css({'height': toPixels(windowHeight)});
+
+  //$("").css(toCssStyle([]))
 }
+
+//alert($(window).height());
 
 $(document).ready(resizeFrame);
 
