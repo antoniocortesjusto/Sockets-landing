@@ -4,19 +4,19 @@ function resizeFrame(){
   var minHeight = 600;
   var windowHeight = $(window).height();
 
-  console.log(windowHeight);
+  //console.log(windowHeight);
 
   if (windowHeight < minHeight){
     windowHeight = minHeight;
   }
   var resizeFactor = windowHeight/myHeight;
 
-  console.log(windowHeight);
-  console.log(resizeFactor);
+  //console.log(windowHeight);
+  //console.log(resizeFactor);
 
 
   function toPixels(value){
-    return (value * resizeFactor).toString() + "px";
+    return (value).toString() + "px";
   }
 
   function toCssStyle(arrayStyles){
@@ -28,89 +28,47 @@ function resizeFrame(){
     return obj
   }
 
-  // $("#third-frame").height(498*resizeFactor);
-  // $("#third-frame").css('margin-top', toPixels(-10));
-  // $("#third-frame").css('min-height', toPixels(300));
+  $("#third-frame").css(toCssStyle(['height', 498 * resizeFactor, 'margin-top', -10 * resizeFactor,
+                                    'min-height', 300 * resizeFactor]));
 
-  $(".white-frame").css(toCssStyle(['min-height', 732]));
+  $(".video-container").css(toCssStyle(['height', 428 * resizeFactor, 'margin-top', 40 * resizeFactor,
+                                        'margin-bottom', 30 * resizeFactor]));
 
-  $("#third-frame").css(toCssStyle(['height', 498, 'margin-top', -10, 'min-height', 300]));
+  $("iframe").css(toCssStyle(['height', 394 * resizeFactor, 'width', 700 * resizeFactor]));
 
-  // $(".video-container").height(428*resizeFactor);
-  // $(".video-container").css('margin-top', toPixels(40));
-  // $(".video-container").css('margin-bottom', toPixels(30));
+  $("#video-p").css(toCssStyle(['margin-bottom', 10 * resizeFactor, 'height', 20 * resizeFactor]));
 
-  $(".video-container").css(toCssStyle(['height', 428, 'margin-top', 40, 'margin-bottom', 30]));
+  $(".subscribe-frame").css(toCssStyle(["min-height", 200 * resizeFactor]));
 
+  $(".subscribe-h2").css(toCssStyle(["height", 33 * resizeFactor, "margin-top", 20 * resizeFactor,
+                                     "margin-bottom" , 20 * resizeFactor, "font-size", 30 * resizeFactor]));
 
-  // $("iframe").css('height', toPixels(394));
-  // $("iframe").css('width', toPixels(700));
-
-  $("iframe").css(toCssStyle(['height', 394, 'width', 700]));
-
-  //$("#video-p").css(toCssStyle([,"margin-bottom:" + toPixels(10) + ";height:" + toPixels(20));
-
-  $("#video-p").css(toCssStyle(['margin-bottom', 10, 'height', 20]));
-
-  $(".subscribe-frame").css(toCssStyle(["min-height", 200]));
-
-  $(".subscribe-h2").css(toCssStyle(["height", 33, "margin-top", 20, "margin-bottom" , 20, "font-size", 30]));
-
-  $(".subscribe-h4").css(toCssStyle(["height", 38, "margin-top", 10,"margin-bottom", 10, "font-size",18]));
+  $(".subscribe-h4").css(toCssStyle(["height", 38 * resizeFactor, "margin-top", 10 * resizeFactor,
+                                     "margin-bottom", 10 * resizeFactor, "font-size", 18 * resizeFactor]));
 
   $("form").css(toCssStyle(["height", 54, "padding-top", 20]));
 
-  $("#MERGE0").css(toCssStyle(["height", 34, 'padding-top', 6, 'padding-right', 12, 'padding-bottom', 6,
-                             'padding-left', 12, "font-size", 14]));
+  $("#MERGE0").css(toCssStyle(["height", 34 * resizeFactor * resizeFactor, 'padding-top', 6 * resizeFactor,
+                               'padding-right', 12 * resizeFactor, 'padding-bottom', 6 * resizeFactor,
+                               'padding-left', 12 * resizeFactor, "font-size", 14 * resizeFactor]));
 
-  $("#false-subscribe").css(toCssStyle(["height", 34, 'padding-top', 6, 'padding-right', 12, 'padding-bottom', 6,
-                                      'padding-left', 12, "font-size", 14]));
+  $("#false-subscribe").css(toCssStyle(["height", 34 * resizeFactor, 'padding-top', 6 * resizeFactor,
+                                        'padding-right', 12 * resizeFactor, 'padding-bottom', 6 * resizeFactor,
+                                        'padding-left', 12 * resizeFactor, "font-size", 14 * resizeFactor]));
 
-  $("#foot-frame").css(toCssStyle(["margin-top", -10, "margin-bottom", 10, "height", 45]));
+  $("#foot-frame").css(toCssStyle(["margin-top", -10 * resizeFactor, "margin-bottom", 10 * resizeFactor,
+                                   "height", 45 * resizeFactor]));
 
-  $(".social-icon").css(toCssStyle(["height", 35, "margin-top" , 10]));
+  $(".social-icon").css(toCssStyle(["height", 35 * resizeFactor, "margin-top" , 10 * resizeFactor]));
 
-  //$(".white-frame").css(toCssStyle(['min-height', 732]));
+  $("#alert_message").css(toCssStyle(['font-size', 30 * resizeFactor, 'margin-top', 20 * resizeFactor,
+                                      'margin-bottom', 10 * resizeFactor]));
 
-  $(".logo-div").css(toCssStyle(['top', 10]));
+  $("#main-frame").css({'height': toPixels(windowHeight), 'min-height': toPixels(windowHeight)});
 
-  $(".description-div").css(toCssStyle(['top', 110]));
-
-  $(".button-div").css(toCssStyle(['top', 297, 'margin-top', 150]));
-
-  $("#second-frame").css(toCssStyle(['min-height', 732]));
-  $("#second-frame").css({'height': toPixels(windowHeight)});
-
-  $(".blue-frame").css(toCssStyle(['min-height', 732]));
-
-  $("#feature-title-row").css(toCssStyle(['padding-bottom', 50]));
-
-  $(".feature-row").css(toCssStyle(['padding-bottom', 50]));
-
-  $(".feature-icon").css(toCssStyle(['font-size', 80, 'margin-top', 23]));
-
-  $(".logo").css(toCssStyle(['height', 80, 'margin-bottom', 20]));
-
-  $(".division").css(toCssStyle(['height', 50]));
-
-  $(".logo-text").css(toCssStyle(['font-size', 48, 'margin-top', 10]));
-
-  $("h2").css(toCssStyle(['font-size', 30]));
-
-  $("h4").css(toCssStyle(['font-size', 18]));
-
-  $("h5").css(toCssStyle(['font-size', 14]));
-
-  $(".btn-sockets").css(toCssStyle(['padding-top', 10, 'padding-right', 16, 'padding-bottom', 10,
-                                    'padding-left', 16, 'font-size', 18]));
-
-  $("#main-frame").css({'height': toPixels(windowHeight)});
-
-  //$("").css(toCssStyle([]))
 }
 
 //alert($(window).height());
 
 $(document).ready(resizeFrame);
-
 $(window).resize(resizeFrame);
